@@ -59,6 +59,8 @@ h1 {
   border: 3px solid #fff;
   border-top: #afafaf 2px solid;
   border-left:  #afafaf 2px solid;
+  padding-top: 6px;
+  font-weight: 300;
 }
 .login input:focus-visible {
   outline: none;
@@ -123,42 +125,59 @@ h1 {
   width: 100%;
   line-height: 34px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
+  cursor: pointer;
 }
 .contents {
   position: absolute;
   overflow-y: scroll;
   width: 100vw;
-  padding-left: 25vw;
+  padding-left: 24vw;
   height: 100vh;
   top: 0;
-  right: 0;
+  left: 100%;
+  animation: glassfade forwards 1s 1 ease 0s normal;
+  /* animation: 名前 終了時の状態 アニメーションの秒数 ループの回数 進行度 開始までの秒数 アニメーションの向き; */
 }
-.glass.before {
-  margin-top: 100vh;
+@keyframes glassfade {
+  0%{left: 100%;}
+  100%{left: 0%;}
 }
 .glass {
   background-color: #f6f6f6b6;
   margin-top: 24px;
   padding-top: 80px;
-  margin-bottom: 100vh;
-  padding-left: 48px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  padding-left: 56px;
+  border-radius: 16px 0 0 16px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
   box-shadow: inset 0px 0px 20px #fcfcfc;
   padding-bottom: 40px;
-  transition: margin-top 0.5s;
+  opacity: 0;
+  animation: glassfade2 forwards 1s 1 ease 0s normal;
+}
+@keyframes glassfade2 {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.glass > div > *:not(h2) {
+  animation: glassContent forwards 0.75s 1 ease 0.8s normal;
+  opacity: 0;
+
+}
+@keyframes glassContent {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 
 .glass h2{
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 300;
   background-repeat: no-repeat;
   background-position: 0px bottom;
   background-size: 100% 1px;
   background-image: repeating-linear-gradient(0deg, #e0e0e0,#e0e0e0);
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fafafa;
   
 }
 .glass h2 span{

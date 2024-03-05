@@ -5,7 +5,7 @@ export default function Login({ onLogin }){
   const [password, setPassword] = useState('');
 
   const handleLoginSubmit = () => {
-    if (password === 'password') {
+    if (password === 'p') {
       // 認証成功時のコールバックを呼び出す
       onLogin();
     } else {
@@ -19,6 +19,7 @@ export default function Login({ onLogin }){
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        placeholder="password"
       />
       <button onClick={handleLoginSubmit}><span>Enter</span></button>
     </div>
