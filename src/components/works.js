@@ -1,10 +1,9 @@
 export default function Works() {
     return (
         <div className="glass">
-            <div className="prof-content">
+            <div className="work-content">
                 <h2>Works<span>制作実績</span></h2>
                 <div className="prof-lead">
-                    <p className="name">村上 将士 （むらかみ まさし）</p>
                     <p>1996年 6月15日生まれ。熊本県出身。京都市在住。<br />
                     高校ではサッカー部に所属。大学進学を機に京都へ移り住む。<br />
                     諸事情により大学を休学(後に退学)し、京都市内の小規模ホテルにて支配人として勤務。<br />
