@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <main>
-      <h1><span>murakami</span><span>masashi</span><span>portfolio</span></h1>
+      <h1><span>masashi</span><span>murakami</span><span>portfolio</span></h1>
       {authenticated ? (
         <Content />
       ) : (

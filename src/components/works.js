@@ -1,16 +1,14 @@
 export default function Works() {
     return (
         <div className='contents'>
-            <div className="glass">
+            <div className="glass works">
                 <div className="work-content">
                     <h2>Works<span>制作実績</span></h2>
-                    <div className="prof-lead">
-                        <p>1996年 6月15日生まれ。熊本県出身。京都市在住。<br />
-                        高校ではサッカー部に所属。大学進学を機に京都へ移り住む。<br />
-                        諸事情により大学を休学(後に退学)し、京都市内の小規模ホテルにて支配人として勤務。<br />
-                        コロナ禍の影響を受け、不動産売買業務、ウェビナーの企画・運営を経験。Webでの集客について考える中で、Web制作に興味を持つようになる。<br />
-                        その後職業訓練校でWeb制作について学び、現在は京都市内の学校法人にてWebサイトとSNSの管理等を行っている。</p>
-                        <p><span>好きなもの</span>映画、料理、鴨川散歩、スノーボード</p>
+                    <div className="work1">
+                        <h3>入試情報サイト</h3>
+                        <p>平安女学院大学の入試情報サイトのリニューアルを行なった。<br />
+                        以前は入試に関する情報のみのページであったため、大学紹介のページを新設し、またその他の受験生向けのコンテンツへの導線を作ることで、入試情報に限らず高校生やその保護者を対象としたまとめページとしての位置付けで制作を行なった。</p>
+                        <p>URL :  <a href="https://www.heian.ac.jp/exam/admission/" target="_blank">https://www.heian.ac.jp/exam/admission/</a></p>
                     </div>
                 </div>
             </div>

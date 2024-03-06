@@ -13,6 +13,12 @@ export default function Login({ onLogin }){
     }
   };
 
+  const enter = (e) => {
+    if (e.key == 'Enter') {
+      e.preventDefault()
+      handleLoginSubmit()
+    }}
+
   return (
     <div className='login'>
       <input
@@ -20,6 +26,8 @@ export default function Login({ onLogin }){
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
+        name="password"
+        onKeyPress={(e) => enter(e)}
       />
       <button onClick={handleLoginSubmit}><span>Enter</span></button>
     </div>
