@@ -20,7 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url(../../public/img/kamogawa.jpg);
+  background: url(../../public/img/kamogawa.webp);
   background-size: cover;
   font-style: normal;
   font-weight: 400;
